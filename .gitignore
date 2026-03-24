@@ -1,0 +1,20 @@
+# Terraform state files — never commit these (contain secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Crash logs
+crash.log
+crash.*.log
+
+# macOS
+.DS_Store
